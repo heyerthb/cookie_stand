@@ -11,8 +11,8 @@ var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '
 var allStores = [];
 var hourlyTotals = [];
 var grandTotal = 0;
-
-
+var newStoreEntry = document.getElementById('new-store-entry');
+var submitNewStore = document.getElementById('submit-new-store');
 
 
 // windows into the dom
@@ -135,6 +135,12 @@ new Store('Seatac Store', 3, 24, 1.2);
 new Store('Seattle Center Store', 11, 38, 3.7);
 new Store('Capitol Hill Store', 20, 38, 2.3);
 new Store('Alki Store', 2,16,4.6);
+
+newStoreEntry.addEventListener('click', function(){
+  event.preventDefault();
+  newStoreEntry.innerHTML = ' ';
+  console.log('User successfully entered a new store');
+});
 
 tableHeader();
 
