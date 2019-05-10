@@ -2,9 +2,9 @@
     <html>
         <head>
             
-            <title>Sales for Salmon Cookies </title>
-            <link rel="stylesheet" type="text/css" href="css/reset.css" />
-            <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        	<title>Sales for Salmon Cookies </title>
+        	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+        	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
         </head>
         <body>
@@ -12,21 +12,29 @@
 
             <table id="store-table"></table>
 
+            <form id="new-store-entry">
+                <fieldset>
+                   <legend>New Store Entry</legend>
+                   
+                   <label>Name: </label>
+                   <input name="Name" type="text" size="15" placeholder="Enter Name Here"/>
 
-            <!-- <p>First and Pike</p>
-            <ul id="pike-store"></ul>
+                   <label>Min Cust Hour: </label>
+                   <input minCust="Min Cust Hour" type="text" size="15" placeholder="Min Cust Hour"/>
+                   
+                   <label>Max Cust Hour: </label>
+                   <input maxCust="Max Cust Hour" type="text" size="15" placeholder="Max Cust Hour"/>
 
-            <p>Seatac Store</p>
-            <ul id="seatac-store"></ul>
+                   <label>Avg Cookies Per Cust:</label>
+                   <input avgCookies="Avg Cookies Per" type="text" size="15" placeholder="Avg Cookies Per"/>
 
-            <p>Seattle Center Store</p>
-            <ul id="seattle-center-store"></ul>
+                   <button type= "submit" id= "submit_new_store"> Submit New Store</button>
 
-            <p>Capitol Hill Store</p>
-            <ul id="capitol-hill-store"></ul>
+                </fieldset>
+            </form>
 
-            <p>Alki Store</p>
-            <ul id="alki-store"></ul> -->
+
+           
             
             <script type="text/javascript" src="js/app.js"></script>
 
