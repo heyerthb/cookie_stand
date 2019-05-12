@@ -10,23 +10,27 @@
         <body>
             <hi>Daily Sales Information for Salmon Cookies</hi>
 
-            <table id="store-table"></table>
+            <table id="storeTable"></table>
 
-            <form id="new-store-entry">
+            <form id="addStore">
                 <fieldset>
                    <legend>New Store Entry</legend>
                    
                    <label>Name: </label>
-                   <input name="Name" type="text" size="15" placeholder="Enter Name Here"/>
+                   <input name="Name" type="text" size="15" 
+                   placeholder="New Store Name"/>
 
                    <label>Min Cust Hour: </label>
-                   <input minCust="Min Cust Hour" type="text" size="15" placeholder="Min Cust Hour"/>
+                   <input minCust="Min Cust Hour" type="number" size="15" 
+                   placeholder="Min Cust Hour"/>
                    
                    <label>Max Cust Hour: </label>
-                   <input maxCust="Max Cust Hour" type="text" size="15" placeholder="Max Cust Hour"/>
+                   <input maxCust="Max Cust Hour" type="number" size="15" 
+                   placeholder="Max Cust Hour"/>
 
                    <label>Avg Cookies Per Cust:</label>
-                   <input avgCookies="Avg Cookies Per" type="text" size="15" placeholder="Avg Cookies Per"/>
+                   <input avgCookies="Avg Cookies Per" type="text" size="15" 
+                   placeholder="Avg Cookies Per"/>
 
                    <button type= "submit" id= "submit_new_store"> Submit New Store</button>
 
